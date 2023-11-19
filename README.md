@@ -1,5 +1,5 @@
 # Notes
-We want to write a method ```print(n)``` that prints the numbers from 1 up to n according to the rules listed in the readme file 
+We want to write a method ```print(n)``` that prints the numbers from 1 up to n according to the rules listed in the ```FizzBuzz-assignment-main/README.md``` file 
 
 - 1 &rarr; "1"
 - 2 &rarr; "1 2"

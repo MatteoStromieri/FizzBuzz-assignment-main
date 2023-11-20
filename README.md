@@ -1,5 +1,5 @@
 # Notes
-We want to write a method ```print(n)``` that prints the numbers from 1 up to n according to the rules listed in the ```FizzBuzz-assignment-main/README.md``` file 
+We want to write a method ```print(n)``` that prints the numbers from 1 up to n according to the rules listed in the readme file 
 
 - 1 &rarr; "1"
 - 2 &rarr; "1 2"
@@ -13,7 +13,7 @@ We want to write a method ```print(n)``` that prints the numbers from 1 up to n 
 @Test
 void given_1_prints_1(){
         new FizzBuzz().print(1);
-        assertEquals("1\r\n",outputStreamCaptor.toString());
+        assertEquals("1",outputStreamCaptor.toString().replaceAll("[\\n\\r]", ""));
     } 
 ```
 First of all, we run this test on a primitive ```FizzBuzz().print()``` method:
@@ -27,7 +27,7 @@ Then, we introduce a second test
 @Test
 void given_2_prints_1_2(){
      new FizzBuzz().print(2);
-     assertEquals("1 2\r\n",outputStreamCaptor.toString());
+     assertEquals("1 2",outputStreamCaptor.toString().replaceAll("[\\n\\r]", ""));
 }
 ```
 Now only the first test is successful, the second one fails. Therefore we upgrade our print() function
@@ -43,7 +43,7 @@ And both the test are successful.
 ```
 void given_3_prints_1_2_fizz(){
     new FizzBuzz().print(3);
-    assertEquals("1 2 Fizz\r\n",outputStreamCaptor.toString());
+    assertEquals("1 2 Fizz",outputStreamCaptor.toString()).replaceAll("[\\n\\r]", "");
 }
 ```
 And the test fails, so we upgrade the function
@@ -62,7 +62,7 @@ Now we test 5 &rarr; "1 2 Fizz 4 Buzz":
 ```
 void given_5_prints_1_2_fizz_4_Buzz(){
         new FizzBuzz().print(3);
-        assertEquals("1 2 Fizz 4 Buzz\r\n",outputStreamCaptor.toString());
+        assertEquals("1 2 Fizz 4 Buzz",outputStreamCaptor.toString()).replaceAll("[\\n\\r]", "");
     }
 ```
 While modifying the print() method we start noticing a pattern, so we can refactor the method to make it more general: 
@@ -99,7 +99,7 @@ Now we introduce the test for "FizzBuzz":
 ```{Java}
 void given_15_prints_fizzbuzz(){
     new FizzBuzz().print(15);
-    assertEquals("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz\r\n",outputStreamCaptor.toString());
+    assertEquals("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz",outputStreamCaptor.toString().replaceAll("[\\n\\r]", ""));
 }
 ```
 Since our function causes this fail to test, we apply some changes:

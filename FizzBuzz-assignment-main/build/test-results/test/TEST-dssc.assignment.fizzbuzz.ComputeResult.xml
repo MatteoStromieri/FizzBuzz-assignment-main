@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dssc.assignment.fizzbuzz.ComputeResult" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-11-19T19:37:24" hostname="LAPTOP-O4J53KV1" time="0.057">
+<testsuite name="dssc.assignment.fizzbuzz.ComputeResult" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-11-20T13:03:08" hostname="LAPTOP-O4J53KV1" time="0.057">
   <properties/>
-  <testcase name="given_15_prints_fizzbuzz()" classname="dssc.assignment.fizzbuzz.ComputeResult" time="0.035"/>
+  <testcase name="given_15_prints_fizzbuzz()" classname="dssc.assignment.fizzbuzz.ComputeResult" time="0.04"/>
   <testcase name="given_1_prints_1()" classname="dssc.assignment.fizzbuzz.ComputeResult" time="0.002"/>
   <testcase name="given_2_prints_1_2()" classname="dssc.assignment.fizzbuzz.ComputeResult" time="0.002"/>
   <testcase name="given_5_prints_1_2_fizz_4_Buzz()" classname="dssc.assignment.fizzbuzz.ComputeResult" time="0.002"/>
-  <testcase name="given_3_prints_1_2_fizz()" classname="dssc.assignment.fizzbuzz.ComputeResult" time="0.003"/>
+  <testcase name="given_3_prints_1_2_fizz()" classname="dssc.assignment.fizzbuzz.ComputeResult" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
